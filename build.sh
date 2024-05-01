@@ -18,7 +18,38 @@ rpm-ostree install discord \
 	hyprpicker \
 	hyprlock \
 	hypridle \
-	hyprpaper
+	hyprpaper \
+	waybar \
+	wl-clipboard \
+	grimshot \
+	brightnessctl \
+	playerctl \
+	kanshi \
+	rofi-wayland \
+	kvantum \
+	qt6ct \
+	onedrive \
+	neovim \
+	eza \
+	zoxide \
+	tmux \
+	zathura \
+	zathura-pdf-mupdf \
+	zathura-djvu \
+	zathura-ps \
+	zathura-cb \
+	fcitx5 \
+	fcitx5-configtool \
+	fcitx5-gtk \
+	fcitx5-qt5 \
+	fcitx5-mozc \
+	adobe-source-han-sans-jp-fonts \
+	adobe-source-han-serif-jp-fonts \
+	virt-manager \
+	qemu \
+	qemu-kvm \
+	swtpm
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket
+systemctl enable libvirtd

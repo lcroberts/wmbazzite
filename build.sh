@@ -13,8 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 curl -Lo /etc/yum.repos.d/_copr_vineelsai-hypr.repo https://copr.fedorainfracloud.org/coprs/vineelsai/hypr/repo/fedora-"${RELEASE}"/vineelsai-hypr-fedora-"${RELEASE}".repo
 
 # this installs a package from fedora repos
-rpm-ostree install discord \
-	hyprland \
+rpm-ostree install hyprland \
 	hyprpicker \
 	hyprlock \
 	hypridle \

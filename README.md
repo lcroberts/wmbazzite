@@ -8,7 +8,15 @@ This repository is intended to be a personal derivative of [Bazzite](https://baz
 
 ## Installing
 
-WIP
+This repository does not generate installer ISOs so the first step is to download an ISO from the [Bazzite](https://bazzite.gg/#) home page.
+
+After you go through the installation process you can the run the following command:
+
+```bash
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/hyprbazzite:latest
+```
+
+It is recommended to avoid going through the post install getting started app before rebasing, so you can close that out and rerun it after the rebase.
 
 ## Containerfile
 

@@ -55,6 +55,7 @@ rpm-ostree install \
 	jq
 # Get grimblast
 curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
+chmod +x /usr/bin/grimblast
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket

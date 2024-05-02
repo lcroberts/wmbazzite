@@ -1,5 +1,7 @@
 # Hyprbazzite
 
+[![build-hyprbazzite](https://github.com/lcroberts/hyprbazzite/actions/workflows/build.yml/badge.svg)](https://github.com/lcroberts/hyprbazzite/actions/workflows/build.yml)
+
 # Purpose
 
 This repository is intended to be a personal derivative of [Bazzite](https://bazzite.gg/#) and is built from the template found [here](https://github.com/ublue-os/image-template). It has added hyprland as well as some window manager tooling on top of the existing Bazzite image to make it fit my workflow out of the box. It also includes some other features that I need such as Japanese input and some theming utilities.

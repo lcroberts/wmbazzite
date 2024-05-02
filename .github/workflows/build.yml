@@ -152,6 +152,6 @@ jobs:
   build_iso:
     name: build iso
     needs: [build_push]
-    if: github.ref_name == 'testing'
+    # if: github.ref_name == 'testing'
     uses: ./.github/workflows/build_iso.yml
     secrets: inherit

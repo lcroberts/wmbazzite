@@ -20,7 +20,6 @@ rpm-ostree install hyprland \
 	hyprpaper \
 	waybar \
 	wl-clipboard \
-	grimshot \
 	brightnessctl \
 	playerctl \
 	kanshi \
@@ -48,6 +47,14 @@ rpm-ostree install hyprland \
 	qemu \
 	qemu-kvm \
 	swtpm
+
+# Requirements for grimblast/grimshot, the grimshot package causes conflicts
+rpm-ostree install \
+	slurp \
+	grim \
+	jq
+# Get grimblast
+curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket

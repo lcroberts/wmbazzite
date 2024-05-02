@@ -5,18 +5,18 @@ on:
     branches:
       - main
   schedule:
-    - cron: '05 10 * * *'  # 10:05am UTC everyday
+    - cron: "05 10 * * *" # 10:05am UTC everyday
   push:
     branches:
       - main
     paths-ignore:
-      - '**/README.md'
+      - "**/README.md"
   workflow_dispatch:
 
 env:
-  MY_IMAGE_NAME: "${{ github.event.repository.name }}"  # the name of the image produced by this build, matches repo names
-  MY_IMAGE_DESC: "My Customized Universal Blue Image"
-  IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
+  MY_IMAGE_NAME: "${{ github.event.repository.name }}" # the name of the image produced by this build, matches repo names
+  MY_IMAGE_DESC: "A personal derivative of bazzite including hyprland and some useful other things"
+  IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}" # do not edit
 
 jobs:
   build_push:
@@ -148,3 +148,12 @@ jobs:
           TAGS: ${{ steps.push.outputs.digest }}
           COSIGN_EXPERIMENTAL: false
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+
+  build_iso:
+    name: build iso
+    needs: [push-ghcr]
+    if: github.ref_name == 'testing'
+    # Eventually would be nice for building images in PRs
+    #if: ${{ endsWith(github.event.pull_request.title, '[ISO]') }}
+    uses: ./.github/workflows/build_iso.yml
+    secrets: inherit

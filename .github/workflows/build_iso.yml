@@ -104,6 +104,7 @@ jobs:
           flatpak_remote_refs_dir: ${{ steps.generate-flatpak-dir-shortname.outputs.flatpak-dir-shortname }}
           enable_flatpak_dependencies: "false"
           extra_boot_params: ${{ steps.generate-extra-params.outputs.extra-boot-params }}
+          additional_templates: "/github/workspace/installer/lorax_templates/remove_root_password_prompt.tmpl"
 
       - name: Create Release
         uses: ncipollo/release-action@v1.14.0

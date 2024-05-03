@@ -21,6 +21,11 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/hyprbazzite:lates
 
 It is recommended to avoid going through the post install getting started app before rebasing, so you can close that out and rerun it after the rebase.
 
+If you are rebasing from an unrelated image such as kinoite you can also run the following command after the rebase to get the flatpaks included in the bazzite installer.
+```bash
+ujust _install-system-flatpaks
+```
+
 ## Containerfile
 
 This file defines the operations used to customize the selected image. It contains examples of possible modifications, including how to:

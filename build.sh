@@ -19,6 +19,7 @@ rpm-ostree install hyprland \
 	hypridle \
 	hyprpaper \
 	waybar \
+	network-manager-applet \
 	wl-clipboard \
 	brightnessctl \
 	playerctl \

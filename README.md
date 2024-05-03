@@ -26,6 +26,14 @@ If you are rebasing from an unrelated image such as kinoite you can also run the
 ujust _install-system-flatpaks
 ```
 
+## Verify
+
+The image can be verified using cosign and the public key in the repository root.
+
+```bash
+cosign verify --key cosign.pub ghcr.io/lcroberts/hyprbazzite
+```
+
 ## Containerfile
 
 This file defines the operations used to customize the selected image. It contains examples of possible modifications, including how to:

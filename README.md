@@ -12,9 +12,10 @@ This repository is intended to be a personal derivative of [Bazzite](https://baz
 
 This repository does not generate installer ISOs so the first step is to download an ISO from the [Bazzite](https://bazzite.gg/#) home page.
 
-After you go through the installation process you can the run the following command:
+After you go through the installation process you can the run the following commands:
 
 ```bash
+rpm-ostree reset
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/hyprbazzite:latest
 ```
 

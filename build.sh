@@ -16,7 +16,6 @@ curl -Lo /etc/yum.repos.d/_copr_vineelsai-hypr.repo https://copr.fedorainfraclou
 rpm-ostree install \
 	adobe-source-han-sans-jp-fonts \
 	adobe-source-han-serif-jp-fonts \
-	ubuntu-family-fonts \
 	mozilla-fira-mono-fonts \
 	powerline-fonts \
 	jetbrains-mono-fonts-all \

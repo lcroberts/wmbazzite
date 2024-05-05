@@ -50,28 +50,11 @@ rpm-ostree install \
 	eza \
 	zoxide \
 	tmux \
-	iotop
-
-# Virtualization and Containers
-rpm-ostree install \
+	iotop \
 	podman-docker \
 	podman-tui \
 	podman-compose \
-	podmansh \
-	virt-manager \
-	qemu \
-	qemu-kvm \
-	swtpm \
-	qemu-char-spice \
-	qemu-device-display-virtio-gpu \
-	qemu-device-display-virtio-vga \
-	qemu-device-usb-redirect \
-	qemu-img \
-	qemu-system-x86-core \
-	qemu-user-binfmt \
-	qemu-user-static \
-	virt-manager \
-	virt-viewer
+	podmansh
 
 # Requirements for grimblast/grimshot, the grimshot package causes conflicts
 rpm-ostree install \
@@ -84,4 +67,3 @@ chmod +x /usr/bin/grimblast
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket
-systemctl enable libvirtd

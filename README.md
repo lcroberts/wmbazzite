@@ -22,6 +22,7 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/hyprbazzite:lates
 It is recommended to avoid going through the post install getting started app before rebasing, so you can close that out and rerun it after the rebase.
 
 If you are rebasing from an unrelated image such as kinoite you can also run the following command after the rebase to get the flatpaks included in the bazzite installer.
+
 ```bash
 ujust _install-system-flatpaks
 ```
@@ -34,10 +35,6 @@ The image can be verified using cosign and the public key in the repository root
 cosign verify --key cosign.pub ghcr.io/lcroberts/hyprbazzite
 ```
 
-## Containerfile
+## Virtualization and Just
 
-This file defines the operations used to customize the selected image. It contains examples of possible modifications, including how to:
-
-- change the upstream from which the custom image is derived
-- add additional RPM packages
-- add binaries as a layer from other images
+The bazzite base image comes with a just for setting up virtualization. `ujust setup-virtualization` can be used to pull up a prompt to manage it. There are also many other just scripts provided that are worth looking through. They can be viewed by simply running `ujust` without any arguments

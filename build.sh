@@ -11,6 +11,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # Add copr repos
 curl -Lo /etc/yum.repos.d/_copr_vineelsai-hypr.repo https://copr.fedorainfracloud.org/coprs/vineelsai/hypr/repo/fedora-"${RELEASE}"/vineelsai-hypr-fedora-"${RELEASE}".repo
+curl -Lo /etc/yum.repos.d/_copr_wezfurlong-wezterm.repo https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-"${RELEASE}"/wezfurlong-wezterm-nightly-fedora-"${RELEASE}".repo
 
 # this installs a package from fedora repos
 rpm-ostree install \
@@ -54,7 +55,8 @@ rpm-ostree install \
 	podman-docker \
 	podman-tui \
 	podman-compose \
-	podmansh
+	podmansh \
+	wezterm
 
 # Requirements for grimblast/grimshot, the grimshot package causes conflicts
 rpm-ostree install \

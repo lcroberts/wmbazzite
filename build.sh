@@ -69,3 +69,4 @@ chmod +x /usr/bin/grimblast
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket
+sudo systemctl disable tailscaled.service

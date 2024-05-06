@@ -35,7 +35,9 @@ rpm-ostree install \
 	kanshi \
 	rofi-wayland \
 	kvantum \
+	kvantum-qt5 \
 	qt6ct \
+	qt5ct \
 	onedrive \
 	zathura \
 	zathura-pdf-mupdf \

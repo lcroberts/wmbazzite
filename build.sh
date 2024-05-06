@@ -56,7 +56,8 @@ rpm-ostree install \
 	podman-tui \
 	podman-compose \
 	podmansh \
-	wezterm
+	wezterm \
+	stow
 
 # Requirements for grimblast/grimshot, the grimshot package causes conflicts
 rpm-ostree install \

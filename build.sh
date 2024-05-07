@@ -21,18 +21,6 @@ rpm-ostree install \
 	powerline-fonts \
 	jetbrains-mono-fonts-all \
 	google-droid-sans-mono-fonts \
-	hyprland \
-	hyprpicker \
-	hyprlock \
-	hypridle \
-	hyprpaper \
-	waybar \
-	polkit-kde \
-	network-manager-applet \
-	wl-clipboard \
-	brightnessctl \
-	playerctl \
-	kanshi \
 	rofi-wayland \
 	kvantum \
 	kvantum-qt5 \
@@ -61,14 +49,37 @@ rpm-ostree install \
 	wezterm \
 	stow
 
-# Requirements for grimblast/grimshot, the grimshot package causes conflicts
+# Hyprland Stuff
+# hyprland \
 rpm-ostree install \
+	hyprpicker \
+	hyprlock \
+	hypridle \
+	hyprpaper \
 	slurp \
 	grim \
 	jq
 # Get grimblast
 curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
 chmod +x /usr/bin/grimblast
+
+# Sway Stuff
+rpm-ostree install \
+	sway \
+	swaybg \
+	swayidle \
+	swaylock \
+	grimshot
+
+# General Wayland WM Stuff
+rpm-ostree install \
+	waybar \
+	polkit-kde \
+	network-manager-applet \
+	wl-clipboard \
+	brightnessctl \
+	playerctl \
+	kanshi
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket

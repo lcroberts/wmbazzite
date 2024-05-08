@@ -98,7 +98,7 @@ chmod +x /usr/bin/grimblast
 # General Wayland WM Stuff
 rpm-ostree install \
 	waybar \
-	polkit-kde \
+	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \
 	brightnessctl \

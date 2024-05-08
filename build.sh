@@ -69,7 +69,8 @@ rpm-ostree install \
 	swaybg \
 	swayidle \
 	swaylock \
-	grimshot
+	grimshot \
+	python3-i3ipc # For autotiling script
 
 # General Wayland WM Stuff
 rpm-ostree install \

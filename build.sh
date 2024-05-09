@@ -105,6 +105,6 @@ rpm-ostree install \
 	playerctl \
 	kanshi
 
-# Example for enabling a System Unit File
 systemctl enable podman.socket
-sudo systemctl disable tailscaled.service
+systemctl disable tailscaled.service
+systemctl disable btrfs-dedub@var-home.timer

@@ -12,7 +12,7 @@ curl -Lo /etc/yum.repos.d/_copr_vineelsai-hypr.repo https://copr.fedorainfraclou
 curl -Lo /etc/yum.repos.d/_copr_wezfurlong-wezterm.repo https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-"${RELEASE}"/wezfurlong-wezterm-nightly-fedora-"${RELEASE}".repo
 
 # this installs a package from fedora repos
-rpm-ostree install \
+rpm-ostree --idempotent install \
 	adobe-source-han-sans-jp-fonts \
 	adobe-source-han-serif-jp-fonts \
 	mozilla-fira-mono-fonts \
@@ -49,7 +49,7 @@ rpm-ostree install \
 	stow
 
 # Hyprland Stuff
-rpm-ostree install \
+rpm-ostree --idempotent install \
 	hyprland \
 	hyprpicker \
 	hyprlock \

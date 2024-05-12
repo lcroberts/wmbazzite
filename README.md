@@ -1,6 +1,6 @@
 # wmbazzite
 
-[![build-wmbazzite](https://github.com/lcroberts/wmbazzite/actions/workflows/build.yml/badge.svg)](https://github.com/lcroberts/wmbazzite/actions/workflows/build.yml)
+[![build-wmbazzite](https://github.com/lcroberts/wm-ublue-derivatives/actions/workflows/build.yml/badge.svg)](https://github.com/lcroberts/wm-ublue-derivatives/actions/workflows/build.yml)
 
 # Purpose
 

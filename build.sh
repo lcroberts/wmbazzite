@@ -70,9 +70,6 @@ rpm-ostree install \
 curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
 chmod +x /usr/bin/grimblast
 
-# General Wayland WM Stuff
-rpm-ostree install
-
 # Example for enabling a System Unit File
 systemctl enable podman.socket
 sudo systemctl disable tailscaled.service

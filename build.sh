@@ -57,53 +57,21 @@ rpm-ostree install \
 	hyprpaper \
 	slurp \
 	grim \
-	jq
-# Get grimblast
-curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
-chmod +x /usr/bin/grimblast
-
-# Sway Stuff
-# rpm-ostree uninstall gamescope gamescope-shaders # Conflicting wlroots
-# rpm-ostree install \
-# 	sway \
-# 	swaybg \
-# 	swayidle \
-# 	grimshot \
-# 	hyprlock \
-# 	python3-i3ipc # For autotiling script
-#
-# read -d '\n' sway_run <<EOF
-# #!/usr/bin/env sh
-# export XDG_CURRENT_DESKTOP="sway"
-# export XDG_SESSION_DESKTOP="sway"
-# export XDG_SESSION_TYPE="wayland"
-# export QT_QPA_PLATFORM="wayland"
-# export QT_QPA_PLATFORMTHEME="qt6ct"
-# sway
-# EOF
-#
-# echo "$sway_run" >/usr/share/wayland-sessions/sway_run
-# chmod +x /usr/share/wayland-sessions/sway_run
-#
-# read -d '\n' sway_session_file <<EOF
-# [Desktop Entry]
-# Name=Sway (Themed)
-# Comment=An i3-compatible Wayland compositor
-# Exec=./sway_run
-# Type=Application
-# EOF
-#
-# echo "$sway_session_file" >/usr/share/wayland-sessions/sway_themed.desktop
-
-# General Wayland WM Stuff
-rpm-ostree install \
+	jq \
 	waybar \
 	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \
 	brightnessctl \
 	playerctl \
-	kanshi
+	kanshi \
+	kitty # For until wezterm wayland stuff is fixed
+# Get grimblast
+curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
+chmod +x /usr/bin/grimblast
+
+# General Wayland WM Stuff
+rpm-ostree install
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket

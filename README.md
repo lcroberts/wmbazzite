@@ -1,10 +1,10 @@
-# Hyprbazzite
+# wmbazzite
 
-[![build-hyprbazzite](https://github.com/lcroberts/hyprbazzite/actions/workflows/build.yml/badge.svg)](https://github.com/lcroberts/hyprbazzite/actions/workflows/build.yml)
+[![build-wmbazzite](https://github.com/lcroberts/wmbazzite/actions/workflows/build.yml/badge.svg)](https://github.com/lcroberts/wmbazzite/actions/workflows/build.yml)
 
 # Purpose
 
-This repository is intended to be a personal derivative of [Bazzite](https://bazzite.gg/#) and is built from the template found [here](https://github.com/ublue-os/image-template). It has added hyprland as well as some window manager tooling on top of the existing Bazzite image to make it fit my workflow out of the box. It also includes some other features that I need such as Japanese input and some theming utilities.
+This branch of the repository is intended to be a personal derivative of [Bazzite](https://bazzite.gg/#) and is built from the template found [here](https://github.com/ublue-os/image-template). It has added some window manager stuff on top of the existing Bazzite image to make it fit my workflow out of the box. It also includes some other features that I need such as Japanese input and some theming utilities. There is another branch of the repo doing a similar thing based off of [Aurora Developer Edition.](https://getaurora.dev/)
 
 # How to Use
 
@@ -16,7 +16,7 @@ After you go through the installation process you can the run the following comm
 
 ```bash
 rpm-ostree reset
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/hyprbazzite:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/lcroberts/wmbazzite:latest
 ```
 
 It is recommended to avoid going through the post install getting started app before rebasing, so you can close that out and rerun it after the rebase.
@@ -32,7 +32,7 @@ ujust _install-system-flatpaks
 The image can be verified using cosign and the public key in the repository root.
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/lcroberts/hyprbazzite
+cosign verify --key cosign.pub ghcr.io/lcroberts/wmbazzite
 ```
 
 ## Virtualization and Just

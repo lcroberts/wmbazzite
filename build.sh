@@ -57,6 +57,7 @@ rpm-ostree --idempotent install \
 	hyprlock \
 	hypridle \
 	hyprpaper \
+	swww \
 	slurp \
 	grim \
 	jq \

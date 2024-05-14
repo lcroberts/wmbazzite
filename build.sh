@@ -50,7 +50,8 @@ rpm-ostree --idempotent install \
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
-	hyprland \
+	hyprland-git \
+	hyprland-contrib \
 	hyprpicker \
 	hyprlock \
 	hypridle \
@@ -58,7 +59,7 @@ rpm-ostree --idempotent install \
 	slurp \
 	grim \
 	jq \
-	waybar \
+	waybar-git \
 	aylurs-gtk-shell \
 	polkit-gnome \
 	network-manager-applet \

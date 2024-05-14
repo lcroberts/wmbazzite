@@ -50,6 +50,7 @@ rpm-ostree --idempotent install \
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
+	pavucontrol \
 	hyprland-git \
 	hyprland-contrib \
 	hyprpicker \

@@ -61,7 +61,7 @@ rpm-ostree --idempotent install \
 	jq \
 	waybar-git \
 	aylurs-gtk-shell \
-	rust-fd-find \
+	fd-find \
 	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \

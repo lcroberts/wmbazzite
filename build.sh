@@ -59,6 +59,7 @@ rpm-ostree --idempotent install \
 	grim \
 	jq \
 	waybar \
+	aylurs-gtk-shell \
 	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \

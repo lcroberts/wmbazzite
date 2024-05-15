@@ -57,9 +57,6 @@ rpm-ostree --idempotent install \
 	hyprlock \
 	hypridle \
 	swww \
-	swappy \
-	slurp \
-	wf-recorder \
 	aylurs-gtk-shell \
 	fd-find \
 	polkit-gnome \

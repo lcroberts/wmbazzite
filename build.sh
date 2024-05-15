@@ -56,12 +56,10 @@ rpm-ostree --idempotent install \
 	hyprpicker \
 	hyprlock \
 	hypridle \
-	hyprpaper \
 	swww \
+	swappy \
 	slurp \
-	grim \
-	jq \
-	waybar-git \
+	wf-recorder \
 	aylurs-gtk-shell \
 	fd-find \
 	polkit-gnome \
@@ -71,9 +69,6 @@ rpm-ostree --idempotent install \
 	playerctl \
 	kanshi \
 	kitty # For until wezterm wayland stuff is fixed
-# Get grimblast
-curl -Lo /usr/bin/grimblast https://raw.githubusercontent.com/hyprwm/contrib/main/grimblast/grimblast
-chmod +x /usr/bin/grimblast
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket

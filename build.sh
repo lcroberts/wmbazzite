@@ -61,6 +61,7 @@ rpm-ostree --idempotent install \
 	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \
+	cliphist \
 	brightnessctl \
 	playerctl \
 	kanshi \

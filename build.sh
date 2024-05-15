@@ -50,7 +50,6 @@ rpm-ostree --idempotent install \
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
-	pavucontrol \
 	hyprland-git \
 	hyprland-contrib \
 	hyprpicker \
@@ -58,6 +57,9 @@ rpm-ostree --idempotent install \
 	hypridle \
 	swww \
 	aylurs-gtk-shell \
+	grim \
+	slurp \
+	jq \
 	fd-find \
 	polkit-gnome \
 	network-manager-applet \
@@ -65,6 +67,7 @@ rpm-ostree --idempotent install \
 	brightnessctl \
 	playerctl \
 	kanshi \
+	pavucontrol \
 	kitty # For until wezterm wayland stuff is fixed
 
 # Example for enabling a System Unit File

@@ -57,9 +57,6 @@ rpm-ostree --idempotent install \
 	hypridle \
 	swww \
 	aylurs-gtk-shell \
-	grim \
-	slurp \
-	jq \
 	fd-find \
 	polkit-gnome \
 	network-manager-applet \

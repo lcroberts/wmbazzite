@@ -50,7 +50,7 @@ rpm-ostree --idempotent install \
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
-	hyprland-git \
+	hyprland \
 	hyprland-contrib \
 	hyprpicker \
 	hyprlock \
@@ -61,7 +61,6 @@ rpm-ostree --idempotent install \
 	polkit-gnome \
 	network-manager-applet \
 	wl-clipboard \
-	cliphist \
 	brightnessctl \
 	playerctl \
 	kanshi \

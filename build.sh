@@ -51,7 +51,8 @@ rpm-ostree --idempotent install \
 	docker-ce-cli \
 	docker-buildx-plugin \
 	docker-compose-plugin \
-	containerd.io
+	containerd.io \
+	php
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \

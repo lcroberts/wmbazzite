@@ -4,7 +4,7 @@
 
 # Purpose
 
-This branch of the repository is intended to be a personal derivative of [Bazzite](https://bazzite.gg/#) and is built from the template found [here](https://github.com/ublue-os/image-template). It has added some window manager stuff on top of the existing Bazzite image to make it fit my workflow out of the box. It also includes some other features that I need such as Japanese input and some theming utilities. There is another branch of the repo doing a similar thing based off of [Aurora Developer Edition.](https://getaurora.dev/)
+This branch of the repository is intended to be a personal derivative of [Bazzite](https://bazzite.gg/#) and is built from the template found [here](https://github.com/ublue-os/image-template). It has added some window manager stuff on top of the existing Bazzite image to make it fit my workflow out of the box. It also includes some other features that I need such as Japanese input and some theming utilities. There is another repo doing a similar thing based off of [Aurora Developer Edition.](https://getaurora.dev/)
 
 # How to Use
 

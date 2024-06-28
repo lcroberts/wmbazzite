@@ -76,3 +76,7 @@ rpm-ostree --idempotent install \
 systemctl enable podman.socket
 systemctl enable docker
 sudo systemctl disable tailscaled.service
+
+curl -Lo /usr/bin/kmonad https://github.com/kmonad/kmonad/releases/latest/download/kmonad
+chmod +x /usr/bin/kmonad
+curl -Lo /usr/share/ublue-os/just/60-custom.just https://raw.githubusercontent.com/lcroberts/wmbazzite/main/custom.just

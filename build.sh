@@ -42,6 +42,7 @@ rpm-ostree --idempotent install \
     zoxide \
     tmux \
     iotop \
+    tokei \
     podmansh \
     wezterm \
     stow \
@@ -70,6 +71,7 @@ rpm-ostree --idempotent install \
     playerctl \
     kanshi \
     pavucontrol \
+    blueman \
     kitty # For until wezterm wayland stuff is fixed
 
 # Cosmic

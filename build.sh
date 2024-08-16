@@ -18,7 +18,6 @@ rpm-ostree --idempotent install \
     powerline-fonts \
     jetbrains-mono-fonts-all \
     google-droid-sans-mono-fonts \
-    rofi-wayland \
     kvantum \
     kvantum-qt5 \
     qt6ct \
@@ -45,7 +44,8 @@ rpm-ostree --idempotent install \
     stow \
     podman-tui \
     podman-compose \
-    podman-docker
+    podman-docker \
+    piper
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
@@ -55,6 +55,7 @@ rpm-ostree --idempotent install \
     hyprpicker \
     hyprlock \
     hypridle \
+    rofi-wayland \
     swww \
     aylurs-gtk-shell \
     fd-find \

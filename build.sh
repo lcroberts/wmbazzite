@@ -24,10 +24,7 @@ rpm-ostree --idempotent install \
     qt5ct \
     onedrive \
     zathura \
-    zathura-pdf-mupdf \
-    zathura-djvu \
-    zathura-ps \
-    zathura-cb \
+    zathura-plugins-all \
     fcitx5 \
     fcitx5-configtool \
     fcitx5-gtk \

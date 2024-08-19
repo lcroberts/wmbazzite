@@ -67,8 +67,8 @@ rpm-ostree --idempotent install \
     kitty
 
 # Cosmic
-curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-"${RELEASE}"/ryanabx-cosmic-epoch-fedora-"${RELEASE}".repo
-rpm-ostree --idempotent install cosmic-desktop
+# curl -Lo /etc/yum.repos.d/_copr_ryanabx-cosmic.repo https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-"${RELEASE}"/ryanabx-cosmic-epoch-fedora-"${RELEASE}".repo
+# rpm-ostree --idempotent install cosmic-desktop
 
 # Proton vpn
 wget "https://repo.protonvpn.com/fedora-$RELEASE-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm"

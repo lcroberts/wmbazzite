@@ -86,5 +86,5 @@ curl -Lo /usr/bin/kmonad https://github.com/kmonad/kmonad/releases/latest/downlo
 chmod +x /usr/bin/kmonad
 curl -Lo /usr/share/ublue-os/just/60-custom.just https://raw.githubusercontent.com/lcroberts/wmbazzite/main/custom.just
 
-sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
-sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
+update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
+update-alternatives --set x-terminal-emulator /usr/bin/kitty

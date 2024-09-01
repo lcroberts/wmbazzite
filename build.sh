@@ -9,7 +9,6 @@ RELEASE="$(rpm -E %fedora)"
 # RPMfusion repos are available by default in ublue main images
 # Add copr repos
 curl -Lo /etc/yum.repos.d/_copr_solopasha-hypr.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${RELEASE}"/solopasha-hyprland-fedora-"${RELEASE}".repo
-curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 # this installs a package from fedora repos
 rpm-ostree --idempotent install \
@@ -40,16 +39,12 @@ rpm-ostree --idempotent install \
     tmux \
     iotop \
     tokei \
-    stow \
-    piper \
     podmansh \
+    stow \
     podman-tui \
     podman-compose \
-    docker-ce \
-    docker-ce-cli \
-    docker-buildx-plugin \
-    docker-compose-plugin \
-    containerd.io
+    podman-docker \
+    piper
 
 # Hyprland Stuff
 rpm-ostree --idempotent install \
@@ -84,7 +79,6 @@ rpm-ostree install proton-vpn-gnome-desktop
 
 # Example for enabling a System Unit File
 systemctl enable podman.socket
-systemctl enable docker
 systemctl disable tailscaled.service
 systemctl disable btrfs-dedup@var-home.timer
 

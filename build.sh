@@ -20,6 +20,7 @@ rpm-ostree --idempotent install \
     powerline-fonts \
     jetbrains-mono-fonts-all \
     google-droid-sans-mono-fonts \
+    gtk-murrine-engine \
     kvantum \
     kvantum-qt5 \
     qt6ct \

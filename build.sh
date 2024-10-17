@@ -49,6 +49,8 @@ rpm-ostree --idempotent install \
     tmux \
     iotop \
     tokei \
+    tealdeer \
+    yq \
     stow \
     piper \
     docker-ce \

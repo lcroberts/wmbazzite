@@ -12,10 +12,6 @@ curl -Lo /etc/yum.repos.d/_copr_solopasha-hypr.repo https://copr.fedorainfraclou
 # curl -Lo /etc/yum.repos.d/_copr_wezfurlong-wezterm.repo https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-"${RELEASE}"/wezfurlong-wezterm-nightly-fedora-"${RELEASE}".repo
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
 
-# Prototricks launch for flatpak, base protontricks command added by bazzite base
-echo '#!/usr/bin/env bash' >/usr/bin/protontricks-launch
-echo 'flatpak run --command=protontricks-launch com.github.Matoking.protontricks "$@"' >>/usr/bin/protontricks-launch
-
 # this installs a package from fedora repos
 rpm-ostree --idempotent install \
     adobe-source-han-sans-jp-fonts \

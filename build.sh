@@ -9,8 +9,10 @@ RELEASE="$(rpm -E %fedora)"
 # RPMfusion repos are available by default in ublue main images
 # Add copr repos
 curl -Lo /etc/yum.repos.d/_copr_solopasha-hypr.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${RELEASE}"/solopasha-hyprland-fedora-"${RELEASE}".repo
-# curl -Lo /etc/yum.repos.d/_copr_wezfurlong-wezterm.repo https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-"${RELEASE}"/wezfurlong-wezterm-nightly-fedora-"${RELEASE}".repo
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
+# VSCode repo
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" >/etc/yum.repos.d/vscode.repo
 
 # this installs a package from fedora repos
 rpm-ostree --idempotent install \
@@ -49,6 +51,7 @@ rpm-ostree --idempotent install \
     yq \
     stow \
     piper \
+    code \
     docker-ce \
     docker-ce-cli \
     docker-buildx-plugin \

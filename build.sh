@@ -10,9 +10,6 @@ RELEASE="$(rpm -E %fedora)"
 # Add copr repos
 curl -Lo /etc/yum.repos.d/_copr_solopasha-hypr.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${RELEASE}"/solopasha-hyprland-fedora-"${RELEASE}".repo
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
-# VSCode repo
-rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" >/etc/yum.repos.d/vscode.repo
 
 # this installs a package from fedora repos
 rpm-ostree --idempotent install \
@@ -51,7 +48,6 @@ rpm-ostree --idempotent install \
     yq \
     stow \
     piper \
-    code \
     docker-ce \
     docker-ce-cli \
     docker-buildx-plugin \
